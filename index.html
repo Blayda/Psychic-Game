@@ -1,55 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Psychic Game</title>
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap Core CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
 
-	<title>Mystical Psychic Guessing Game</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
 
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-	<link href="https://fonts.googleapis.com/css?family=Fondamento" rel="stylesheet">
-
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-	 crossorigin="anonymous">
-	</script>
-
-</head>
-
-<body>
-
-	<div class="container">
-		<div class="center">
-			<div class="wrapper">
-
-				<h3>Won</h3>
-
-				<span id="won"></span>
-
-				<h3>Lost</h3>
-
-				<span id="lost"></span>
-
-				<p>Guesses Remaining...
-					<span id="attempts"></span>
-				</p>
-
-				<p>Letters Already Guessed</p>
-
-				<span id="playerGuess"></span>
-
-				<h1>Guess the Psychic's Random Letter</h1>
-
-				<h3>You only have 10 guesses...choose wisely.</h3>
-			</div>
-		</div>
-		</container>
-
-		<script src="assets/js/script.js"></script>
-
-</body>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="page-header">
+        <h1>The Psychic Game</h1>
+      </div>
+    </header>
+    <div class="container">
+      <h2>Guess what letter I'm thinking of</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="assets/images/Psychic.jpg" class="thumbnail" alt="..." />
+        </div>
+        <div class="col-md-4">
+          <ul id="space" class="list-group">
+            <li class="list-group-item" id="wins">Wins:</li>
+            <li class="list-group-item" id="lose">Losses:</li>
+            <li class="list-group-item" id="guessesLeft">Guesses Left:</li>
+            <li class="list-group-item" id="letter">Your Guesses so far:</li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <img src="assets/images/Psychics.jpg" class="thumbnail" alt="..." />
+        </div>
+      </div>
+    </div>
+    <!-- Javascript game.js -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+  </body>
 </html>
-
